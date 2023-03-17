@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # dependencies installation
-#sudo apt install zbar-tools
+#sudo apt install zbar-tools yubikey-personalization
 
 # 1. oad the QR code and save the key to a variable
 YUBI_KEY=$(zbarcam -1 --raw)
