@@ -10,7 +10,7 @@ YUBI_KEY=$(zbarcam -1 --raw)
 #   -2 - upload to slot number 2
 #   -a$YUBI_KEY - provide key as AES
 #   -y - do not ask for permission, if zbarcam has done its work, copy key to the yubikey immediately
-ykpersonalize -2 -a$YUBI_KEY -ochal-resp -ochal-hmac -ohmac-lt64 -oserial-api-visible -oallow-update -y
+ykpersonalize -2 -a$YUBI_KEY -ochal-resp -ochal-hmac -ohmac-lt64 -oserial-api-visible -oallow-update -y  # this is taken from https://keepassxc.org/docs/KeePassXC_UserGuide#_creating_a_yubikey_backup
 
 
 
